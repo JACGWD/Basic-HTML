@@ -1,1 +1,0 @@
-Use modernizr classes for feature deteection so SEO optimized and interactive
