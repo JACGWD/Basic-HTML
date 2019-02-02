@@ -8,9 +8,9 @@ See: https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html
  <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <link rel=”canonical” href=”” />
-   <title></title>
-   <meta name="description" content="">
+   <link rel="canonical" href="" />
+   <title>Basic HTML file structure</title>
+   <meta name="description" content="HTML 5 template based on the 'HTML 5 Boilerplate project', with commented code especially suited for beginngers">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <link rel="manifest" href="site.webmanifest">
@@ -30,15 +30,50 @@ See: https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html
    <main>
      <!-- This is just sample content. Add your own content here. But do red the links, they are important. -->
 
-     <h1>Hello world! This is HTML5 Boilerplate.</h1>
+     <h1>List of HTML tags</h1>
+     <h2>Semantic HTML</h2>
+      <ul>
+        <li>h1</li>
+   	    <li>h2</li>
+        <li>h3</li>
+        <li>h4</li>
+        <li>h5</li>
+        <li>h6</li>
+        <li>p</li>
+        <li>ul</li>
+        <li>ol</li>
+        <li>li</li>
+        <li>a</li>
+   	    <li>section</li>
+        <li>article</li>
+        <li>aside</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>nav</li>
+        <li>figure</li>
+        <li>figcaption</li>
+        <li>time</li>
+        <li>mark</li>
+        <li>main</li>
+        <li>detail</li>
+      </ul>
 
-   	<h2>Responsive Design &amp; Mobile First</h2>
-   		<p>This website was designed using <a href="http://responsivedesign.ca/blog/responsive-web-design-what-is-it-and-why-should-i-care" target="_blank">Responsive Design</a> techniques which allows it to look great on all types of devices. </p>
-           <p>It is also created for <a href="http://www.lukew.com/resources/mobile_first.asp" target="_blank">mobile first</a> which means it will be designed for small devices using the fewer amounts of elements possible. Other items will be added to make it look great on larger screens.</p>
+      <h2>Non-Semantic HTML</h2>
+       <ul>
+         <li>div</li>
+    	   <li>div</li>
+       </ul>
+
+       <h3>Note</h3>
+       <p>This list is a work in progress. It is incomplete.</p>
    </main>
 
-
-
+<aside>
+<!-- the <aside> tag is the semantic tag for a sidebar or any sort of content related to whatever is in <main>-->
+  <h2>Responsive Design &amp; Mobile First</h2>
+    <p>This website was designed using <a href="http://responsivedesign.ca/blog/responsive-web-design-what-is-it-and-why-should-i-care" target="_blank">Responsive Design</a> techniques which allows it to look great on all types of devices. </p>
+         <p>It is also created for <a href="http://www.lukew.com/resources/mobile_first.asp" target="_blank">mobile first</a> which means it will be designed for small devices using the fewer amounts of elements possible. Other items will be added to make it look great on larger screens.</p>
+</aside>
 
    <!-- All javascript files are to be at the bottom to make the web site faster -->
 
@@ -59,12 +94,16 @@ See: https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html
 
 
 
-   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+   Move the closing comment tag from line 106 to the end of line 97 to enable analytics when the page goes live
+
+
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+-->
 
  </body>
 
