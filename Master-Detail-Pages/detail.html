@@ -1,81 +1,23 @@
-<!doctype html>
 <!--
-This code if from the HTML 5 Boilerplate Project, version 6.1.0 https://html5boilerplate.com/
-See: https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html
+The detail page uses base.html for it's HTML. The only difference is what will be found inside <main>.
 
-This page is based on https://github.com/JACGWD/Basic-HTML/base-html.html
- -->
- <html class="no-js" lang="">
+A "detail" page's role is to display the details of a certain item that was in the master page. For example if the master had a choice of shoes displayed as a grid of thumbnails, the detail page is what gets loaded when the thumbnail is clicked. The details include price, size, available colors, etc.
+-->
 
- <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <link rel="canonical" href="#" />
-   <title>Sample detail page template</title>
-   <meta name="description" content="Basic semantic HTML code for a detail page from a master/detail relationship">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <link rel="manifest" href="site.webmanifest">
-   <link rel="apple-touch-icon" href="icon.png">
-   <!-- Place favicon.ico in the root directory -->
-
-   <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/main.css">
- </head>
-
- <body>
-   <!--[if lte IE 9]>
-     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-   <![endif]-->
-
-
-   <main>
-     <!-- This is just sample content. Add your own content here. But do red the links, they are important. -->
+<main>
 
      <h1>Sample <strong>Detail Page</strong> Template</h1>
 
      <figure class="highres">
-     						<img src="img/file.jpg" alt="accurate description of the file contents" height="200" width="300" />
-     						<figcaption>
-     							Some text that describes the item.
-     						</figcaption>
-     					</figure>
+<!-- The <figure> tag is used to add "self-contained" content like illustrations, diagrams, photos or codes in a page. See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
 
 
-   </main>
+     <img src="img/file.jpg" alt="accurate description of the file contents" height="200" width="300" />
+     <!-- Alt text is always required. See: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML#Alternative_text -->
+
+      <figcaption>Some text that describes the item.</figcaption>
+      <!-- The HTML <figcaption> element represents a caption or legend for the rest of the contents in the parent <figure> element. See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption -->
+     	</figure>
 
 
-
-
-   <!-- All javascript files are to be at the bottom to make the web site faster -->
-
-   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-
-
-   <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-   <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-   <!-- Change the {{JQUERY_VERSION}} and other words in brackets to the real numbers. Such as jquery-3.3.1.min.js -->
-   <!-- The first JQuery link loads the library from Google's servers, which is usually faster than your own. -->
-   <!-- The second JQuery link only works if the first one fails for some reason. ie If Google link fails load from your own server. -->
-
-   <script src="js/plugins.js"></script>
-   <!-- Paste all your JQuery plugin code into one file for fewer http requests -->
-
-   <script src="js/main.js"></script>
-   <!-- If you code any JS by hand you can add it to this file -->
-
-
-
-   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
-   Move the closing comment tag from line 78 to the end of line 69 to enable analytics when the page goes live
-
-
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
--->
- </body>
-
- </html>
+</main>
