@@ -19,8 +19,6 @@ Another example would be beatles-albums.html pointing to rubber-soul.html and wh
 ### Search Engine Optimization
 Note that *detail pages are important for SEO (search engine optimization)* because they are very *specific*.
 
-Example: If you have a page called pets.html that has info about ten animals on it: cats, dogs, turtles, fish, ... etc. If someone does a Google search looking for "turtles" then your page is only 10% relevant.
-
-If you have a master page called pets.html *and* and page called turtles.html then turtles.html is 100% relevant to the Google search and your page is likely to be seen.
+Example: If you have a page called pets.html that has info about ten animals on it: cats, dogs, turtles, fish, ... etc. If someone does a Google search looking for "turtles" then your page is only 10% relevant. If you have a master page called pets.html *and* and page called turtles.html then turtles.html is 100% relevant to the Google search and your page is much more likely to be seen.
 
 Remember that the [best place to hide a dead body is on page two of Google](https://duckduckgo.com/?q=best+place+to+hide+a+dead+body+is+on+page+two+of+Google&t=ffnt&ia=web).
