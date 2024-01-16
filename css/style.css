@@ -9,14 +9,35 @@
     ========================================================================== */
 
 /* ==========================================================================
-
-  Place font @import rules at top of the CSS stylesheet. They will not work reliably if placed elsewhere in this file.
-  Best practice is to use the <link> tag in the HTML <head> instead. @import rules slow down the browser.
-
+*  0. Defaults to be loaded before anything else
+*
+*   0.1 @import rules
+*       Place font @import rules at top of the CSS stylesheet. They will not work reliably if placed elsewhere in a CSS file.
+*       Best practice is to use the <link> tag in the HTML <head> instead. 
+*       @import rules slow down the browser.
+*
    @import url();
+*   
+*   
+*   0.2 Default font size
+*
+*/
+
+  :root {
+        /* font-size: 62.5%; /* Forces default font size to 10px to make calculating REMs easier. */
+        font-size: 100%;  /* Default font size is standard 16px */
+      }
+
+  /*
+  
+ 
 
   ========================================================================== */
 /*
+
+0. Defaults to be loaded before anything else
+    0.1 @import rules
+    0.2 Default font size
 
 1. Mobile First - GLOBAL styles that apply to all screen sizes
 	  1.1 - Boxes
@@ -73,7 +94,7 @@ XXem (YYYpx) and larger
 *   Code elements in the order you will see them on the page top to bottom. Makes finding rules easier and faster.
 *   For example: html, body, header, nav, main, aside, footer. Etc.
 *
-*
+*   0. Defaults
 *   1. Boxes
 *   2. Backgrounds
 *   3. Typography
