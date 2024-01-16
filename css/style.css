@@ -8,7 +8,6 @@
   
     ========================================================================== */
 
-
 /* ==========================================================================
 
   Place font @import rules at top of the CSS stylesheet. They will not work reliably if placed elsewhere in this file.
@@ -17,7 +16,7 @@
    @import url();
 
   ========================================================================== */
-  /*
+/*
 
 1. Mobile First - GLOBAL styles that apply to all screen sizes
 	  1.1 - Boxes
@@ -39,10 +38,9 @@
 All the min-width media queries follow this pattern:
 
 XXem (YYYpx) and larger
-	XXpx Default
-	XXpx Default Retina
-	XXpx Portrait
-	XXpx Portrait Retina
+
+	XXpx Default (Retina)
+	XXpx Portrait (Retina)
 
 
 
@@ -59,141 +57,144 @@ XXem (YYYpx) and larger
 
   */
 
-
 /* ==========================================================================
-
-
-   Mobile First Philosophy: Start by coding CSS for a small screen first (mobile phone) and make your way up to bigger screens. In order: mobile, tablet, desktop, HD.
-
-   Baseline CSS for all size viewports.
-
-
-   Write your default CSS rules here. They will apply ("cascade") to everything below.
-
-
-   - - - -
-
-
- Use numbered sections to organize your CSS. Organize in a way you find intuitive.
-
- Code elements in the order you will see them on the page. Makes finding rules easier and faster.
- For example: html, body, header, nav, main, aside, footer. Etc.
-
-
-1. Boxes
-2. Backgrounds
-3. Typography
-4. Colors
-5. NAV
-6. Form
+* 
+* 1. MOBILE FIRST
+*
+*   Mobile First Philosophy: Start by coding CSS for a small screen first (mobile phone) and make your way up to bigger screens. In order: mobile, tablet, desktop, HD.
+*
+*   BASELINE CSS FOR ALL SIZE VIEWPORTS.
+*
+*
+*   Write your default CSS rules here. They will apply ("cascade") to everything below.
+*
+*   Use numbered sections to organize your CSS. Organize in a way you find intuitive.
+*
+*   Code elements in the order you will see them on the page top to bottom. Makes finding rules easier and faster.
+*   For example: html, body, header, nav, main, aside, footer. Etc.
+*
+*
+*   1. Boxes
+*   2. Backgrounds
+*   3. Typography
+*   4. Colors
+*   5. NAV
+*   6. Form
+*   7. Images
+* 
    ========================================================================== */
 
-body {background-color: #eee;}
-main {background-color: #fff; padding: 1em; border: 1px solid #444; width:95%; margin: 0 auto;}
-
-img {max-width: 100%; height: auto;}
 
 
+/* ---- 1. MAIN BOXES  -------  */
+
+    /* 
+
+    body {}
+    header {}
+    nav {}
+    main {}
+    aside {}
+    footer {} 
+
+    */
 
 
+/* ---- 2. BACKGROUNDS -------  */
+
+/* ----  3. TYPOGRAPHY ---- */
+
+/* 
+    Use a typographic scale: 
+    https://spencermortensen.com/articles/typographic-scale/
+    https://typescale.com/ 
+*/
 
 
-
-
-
-
-
-
-
-/* ---- 1. Boxes  -------  */
-
-
-
-
-/* ---- 2. Backgrounds -------  */
-
-
-
-
-
-
-/* ----  3. Typography ---- */
-
-
-
-
-/* ----  4. Colors ---- */
-
-
-
+/* ----  4. COLORS ---- */
 
 /* ----  5. NAV ---- */
 
-ul.navigation {display: none;}  /* On mobile, start by hiding the navigation list so you only see the hamburger icon */
+/* ON MOBILE, START BY HIDING THE NAVIGATION LIST SO YOU ONLY SEE THE HAMBURGER ICON 
+
+ul.navigation {
+  display: none;  
+}
+*/
+
+/* DON'T FORGET LOVEHA! RULE
+
+    a:link {}
+    a:visited {}
+    a:hover {}
+    a:active {} 
+
+*/
 
 
-/* Don't forget LoVeHA! Rule */
+/* ----  6. FORM ---- */
+
+/* 
+
+    form > input,
+    form > textarea,
+    form > label { } 
+
+*/
 
 
+/* ----  7. IMAGES ---- */
 
-/* ----  6. Form ---- */
+img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;    /* Maintains the proportions of the image, ie does not stretch or distort */
+  }
 
-form > input, 
-form > textarea, 
-form > label {
-    /* display: block; 
-    margin: 0 0 1em 0; */
-}  
-
-
-
- /* ========================== END MOBILE FIRST ===========================  */
-
-
-
-
+/* ========================== END MOBILE FIRST ===========================  */
 
 
 
 
 /* ==========================================================================
-
-	*****  START VISUAL MEDIA QUERIES *****
-
-   Media Queries start here. Use them to tweak your design as the screen size gets bigger.
-
-   If you want to change something that appears across all browser screen sizes, code it above, not below this section.
-
-   Anything you write in the CSS stylesheet will inherited by ("cascade to") media queries written below.
-
-   In other words, if your default paragraph color is blue (in the baseline CSS) and you set the paragraph color rule to red in the first media query, then the media queries written below will also display the text as red. You do not need to add the red rule again, it gets inherited.
-
-   Remember, the last CSS rule wins.
-
-
-   BOOTSTRAP BREAKPOINTS
-
-    X-Small                 < 576px
-    Small                   > 576px
-    Medium                  > 768px
-    Large                   > 992px
-    Extra large             > 1200px
-    Extra extra large       > 1400px
-
-
-    BEST PRACTICES FOR CSS MEDIA QUERIES
-    from: https://www.codeinwp.com/blog/how-to-use-css-media-queries/
-
-    ❌ Don’t write media queries for specific device sizes like iPad, iPhone, etc. Write media queries according to how your layouts ‘break’ at different points (hence the term “breakpoints”). This means you’re allowing the content to define the breakpoints.
-
-    👍 If possible, go with a mobile-first approach with your media queries where your non-media query CSS would apply to the smallest device, then add media queries for larger viewports as needed.
-
-    👍 Take advantage of CSS layout features like flexbox and CSS grid to naturally create layouts that are responsive without the need for media queries, if possible.
-
-
+* 
+*  2. MEDIA QUERIES
+* 
+*    Media Queries start here. Use them to tweak your design as the screen size gets bigger.
+* 
+*    If you want to change something that APPEARS ACROSS ALL BROWSER SCREEN SIZES, CODE IT ABOVE, NOT BELOW THIS SECTION.
+* 
+*    Anything you write in the CSS stylesheet will inherited by ("cascade to") media queries written below.
+* 
+*    In other words, if your default paragraph color is blue (in the baseline CSS) and you set the paragraph color rule to red in the first media query, then the media queries *    written below will also display the text as red. You do not need to add the red rule again, it gets inherited.
+* 
+*    Remember, the last CSS rule wins.
+* 
+* 
+*    BOOTSTRAP BREAKPOINTS
+* 
+*     X-Small                 < 576px     Use max-width to design for anything smaller than 576px
+*     Small                   > 576px     Use min-width to design for anything wider than 576px but smaller than 768px
+*     Medium                  > 768px     Use min-width to design for anything wider than 768px but smaller than 992px
+*     Large                   > 992px     Use min-width to design for anything wider than 992px but smaller than 1200px
+*     Extra large             > 1200px    Use min-width to design for anything wider than 1200px but smaller than 1400px
+*     Extra extra large       > 1400px    Use min-width to design for anything wider than 1400px 
+*    
+*     Add and modify as necessary...
+* 
+* 
+*     BEST PRACTICES FOR CSS MEDIA QUERIES
+*     from: https://www.codeinwp.com/blog/how-to-use-css-media-queries/
+* 
+*     ❌ Don’t write media queries for specific device sizes like iPad, iPhone, etc. Write media queries according to how your layouts ‘break’ at different points 
+*       (hence the term “breakpoints”). This means you’re allowing the content to define the breakpoints.
+* 
+*     👍 If possible, go with a mobile-first approach with your media queries where your non-media query CSS would apply to the smallest device, 
+*        then add media queries for larger viewports as needed.
+* 
+*     👍 Take advantage of CSS layout features like flexbox and CSS grid to naturally create layouts that are responsive without the need for media queries, if possible.
+* 
+* 
    ========================================================================== */
-
-
 
 
 
@@ -203,74 +204,24 @@ form > label {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  /* Landscape CSS rules go here */
+}
 
-    /* Landscape CSS rules go here */
-
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  /* CSS Portrait rules go here */
 }
 
 
+/* At the first viewport large enough to display your navigation properly, unhide the navigation list so you see the full menu 
 
-@media only screen and (min-width: 768px)  and (orientation : portrait) {
-
-    /* CSS Portrait rules go here */
-
+ul.navigation {
+  display: block;  
 }
 
-
-
-
-
-
-
+*/
 
 
 /* ================ END VISUAL MEDIA QUERIES =============== */
-
-
-
-  /* ========== Utility Classes ========== */
-
-
-
-  /*
-      .hide-text for image replacements
-      See: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-  */
-
-
-.hide-text {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-
-.currentpage {font-weight: bold; text-decoration: underline; color: #FC9;}
 
 
 
@@ -278,12 +229,81 @@ form > label {
 
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request: h5bp.com/r
+*
+* 3. Utility Classes 
+* Useful hacks to solve design problems
+*
+============================================================================= */
+
+/*
+      .hide-text for image replacements
+      See: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+           https://en.wikipedia.org/wiki/CSS_image_replacement
+  */
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/*
+ * Clearfix: Contain floats
+ *
+ * If you use float: left (or right), the parent element may not "wrap around" or "contain" the floating element
+ * Use "overflow: auto;" on the parent to force the parent to wrap the float
+ * Otherwise use the clearfix hack
+ * See: https://www.w3schools.com/howto/howto_css_clearfix.asp
+ */
+
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+
+/*
+ * Current Page
+ *
+ * Highlight the current page in the navigation menu for better UX
+ * For example, make the "contact" link bold, underlined and orange when on the web site's contact page
+ * 
+ */
+
+.currentpage {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fc9;
+}
+
+
+
+/* ==========================================================================
+ *
+ *  4.1 Print styles
+ *  Remove interactive elements and colors for standard black and white printing
+ *
    ========================================================================== */
 
 @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-    nav {display: none;}
-
+  nav {
+    display: none;
+  }
 }
