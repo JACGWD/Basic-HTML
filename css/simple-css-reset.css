@@ -2,6 +2,7 @@
 
    PDHT Web App Simple CSS Reset
    by Eric Girouard, 2014
+   Updated March 2024
    Based on http://meyerweb.com/eric/tools/css/reset/ (version 2)
    (Added HTML 5's "main" tag to CSS selectors)
    
@@ -28,6 +29,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
