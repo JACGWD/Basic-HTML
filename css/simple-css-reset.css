@@ -1,8 +1,9 @@
 /*
 
-   PDHT Web App Simple CSS Reset
+   PDHT Web App Simple CSS Reset v2.1
    by Eric Girouard, 2014
    Updated March 2024
+
    Based on http://meyerweb.com/eric/tools/css/reset/ (version 2)
    (Added HTML 5's "main" tag to CSS selectors)
    
@@ -54,4 +55,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Responsive images by default */
+img {
+	max-width: 100%;
+	height: auto;
+}
