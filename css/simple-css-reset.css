@@ -57,6 +57,6 @@ table {
 }
 /* Responsive images by default */
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;    /* Maintains the proportions of the image, ie does not stretch or distort */
 }
