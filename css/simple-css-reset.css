@@ -1,7 +1,9 @@
 /*
 
-   PDHT Web App Simple CSS Reset
+   PDHT Web App Simple CSS Reset v2.2
    by Eric Girouard, 2014
+   Updated April 2024
+
    Based on http://meyerweb.com/eric/tools/css/reset/ (version 2)
    (Added HTML 5's "main" tag to CSS selectors)
    
@@ -12,8 +14,8 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+del, dfn, em, img, input, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, textarea, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -28,6 +30,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -52,4 +55,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Responsive images by default */
+img {
+	max-width: 100%;
+	height: auto;
+}
